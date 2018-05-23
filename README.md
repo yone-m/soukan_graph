@@ -24,11 +24,12 @@ for i in a:
     LINE = [ID,kakaku,kyori]
     pal.append(LINE)
 
-
+# 背景の設定
 sns.set_style("whitegrid")
 
 # データセットの作成(palは二次元配列）
 tips = pd.DataFrame(pal,columns=('ID','kakaku','kyori'))
+
 # データセットのコラムを指定してグラフ描写
 sns.regplot(x="kyori",y="kakaku",data=tips)
 ```
